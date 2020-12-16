@@ -15,7 +15,10 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'npm --prefix DevOps-Exc1_Development/express_example-master test'
+        dir(path: 'express_example-master/test') {
+          sh 'npm test'
+        }
+
       }
     }
 
