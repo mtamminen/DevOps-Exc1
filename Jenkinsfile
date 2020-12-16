@@ -15,7 +15,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'npm --prefix DevOps-Exc1_Development test'
+        sh 'npm --prefix DevOps-Exc1_Development/express_example-master test'
       }
     }
 
