@@ -13,15 +13,6 @@ pipeline {
       }
     }
 
-    stage('Test') {
-      steps {
-        dir(path: 'express_example-master/test') {
-          sh 'npm test'
-        }
-
-      }
-    }
-
   }
   environment {
     HOME = '.'
