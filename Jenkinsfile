@@ -7,15 +7,12 @@ pipeline {
 
   }
   stages {
-    stage('Build') {
+    stage('') {
       steps {
-        sh 'npm install express_example-master'
-      }
-    }
+        dir(path: 'express_example-master') {
+          sh 'npm install'
+        }
 
-    stage('Test') {
-      steps {
-        sh 'npm test'
       }
     }
 
