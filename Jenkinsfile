@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm install express_example-master'
+        sh 'npx install express_example-master'
       }
     }
 
