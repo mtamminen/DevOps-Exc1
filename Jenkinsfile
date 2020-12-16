@@ -9,6 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh 'sudo chown -R 114:120 "/.npm"'
         sh 'npm install express_example-master'
       }
     }
