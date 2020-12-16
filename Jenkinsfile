@@ -25,15 +25,6 @@ pipeline {
       }
     }
 
-    stage('Delivery') {
-      steps {
-        dir(path: 'express_example-master') {
-          sh 'npm start'
-        }
-
-      }
-    }
-
   }
   environment {
     HOME = '.'
