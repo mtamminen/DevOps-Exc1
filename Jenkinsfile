@@ -25,6 +25,15 @@ pipeline {
       }
     }
 
+    stage('Delivery') {
+      steps {
+        dir(path: 'express_example') {
+          sh 'npm start'
+        }
+
+      }
+    }
+
   }
   environment {
     HOME = '.'
