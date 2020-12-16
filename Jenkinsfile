@@ -7,12 +7,9 @@ pipeline {
 
   }
   stages {
-    stage('') {
+    stage('Change directory') {
       steps {
-        dir(path: 'express_example-master') {
-          sh 'npm install'
-        }
-
+        dir(path: 'express_example-master')
       }
     }
 
