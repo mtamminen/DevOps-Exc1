@@ -15,7 +15,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'npm express_example-master/test'
+        sh 'npm test -- express_example-master/'
       }
     }
 
