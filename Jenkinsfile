@@ -19,7 +19,10 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'npm test'
+        dir(path: 'express_example-master') {
+          sh 'npm test'
+        }
+
       }
     }
 
