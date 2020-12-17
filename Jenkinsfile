@@ -9,8 +9,11 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''npm install
+        dir(path: 'express_example-master') {
+          sh '''npm install
 '''
+        }
+
       }
     }
 
